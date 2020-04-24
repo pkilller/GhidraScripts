@@ -475,7 +475,7 @@ public class FirmwarePatchThumb extends GhidraScript {
 	static byte[] hexToByte(String hex){
 		hex = hex.replace(" ", "");
 		int m = 0, n = 0;
-		int byteLen = hex.length() / 2; // 每两个字符描述一个字节
+		int byteLen = hex.length() / 2;
 		byte[] ret = new byte[byteLen];
 		for (int i = 0; i < byteLen; i++) {
 			m = i * 2 + 1;
